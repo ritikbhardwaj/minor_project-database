@@ -1,0 +1,83 @@
+
+  __  __ _                    _____           _           _   
+ |  \/  (_)                  |  __ \         (_)         | |  
+ | \  / |_ _ __   ___  _ __  | |__) | __ ___  _  ___  ___| |_ 
+ | |\/| | | '_ \ / _ \| '__| |  ___/ '__/ _ \| |/ _ \/ __| __|
+ | |  | | | | | | (_) | |    | |   | | | (_) | |  __/ (__| |_ 
+ |_|  |_|_|_| |_|\___/|_|    |_|   |_|  \___/| |\___|\___|\__|
+                                            _/ |              
+ Database Inspiration                      |__/               
+=============================================================
+
+
+
+
+
+
+--------------------
+| ENTITIES DIAGRAM |
+--------------------
+          1          N            |POST-LIKES|
+|USERS| ----- have ----- |POSTS|   /
+                            \     / N
+                           1 \   /
+                             have ------- |PHOTOS|
+                                \    N
+                              N  \
+                                  \
+                               |COMMENTS|
+
+
+
+-----------------------
+| ENTITIES ATTRIBUTES |
+-----------------------
+
+
+USERS - User Data
+-----
+    - user_id
+    - first_name
+    - last_name
+    - date_of_birth
+    - gender
+    - address
+    - email
+
+
+
+POSTS - Post data
+-----
+    - post_id
+    - user_id
+    - post_date
+    - post_content
+
+
+
+POST-LIKES - No. of likes on a post
+----------
+    - user_id
+    - post_id
+
+
+
+PHOTOS - Photo contents
+------
+    - photo_id
+    - post_id
+    - image_content (most probably url)
+
+
+
+COMMENTS - Comments on the posts
+--------
+    - comment_id
+    - post_id
+    - user_id
+    - comment_date
+    - comment_content
+
+
+
+
