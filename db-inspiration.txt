@@ -80,4 +80,8 @@ COMMENTS - Comments on the posts
 
 
 
+FOLLOWERS - followers
+---------
+    - user_id
+    - follower_id
 
